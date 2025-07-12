@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Galeria de imagenes</title>
+</head>
+<body>
+<audio id="player" ontimeupdate="updateProgress();">
+<source id="source"> 
+Audio no soportado 
+</audio>
+
+    <div class="element">
+        <h1>Titulo</h1>
+        <h2>subtitulo hola como estass</h2s>
+        <p> 12/03/25</p>
+        <div class="imgcontainer">
+            <img src="/Img/pic2.jpg" alt="pic1">
+        </div>
+    </div>
+
+
+    <div class="element">
+        <h1>Titulo</h1>
+        <h2>subtitulo hola como estass</h2s>
+        <p> 12/03/25</p>
+        
+        <div class="imgcontainer">
+            <img src="/Img/pic3.jpg" alt="pic1">
+        </div>
+    </div>
+
+    <div class="element">
+        <h1>Titulo</h1>
+        <h2>subtitulo hola como estass</h2s>
+        <p> 12/03/25</p>
+        <div class="imgcontainer">
+            <img src="/Img/pic4.jpg" alt="pic1">
+        </div>
+    </div>
+
+    <div class="botones">
+        <button id="botonleft">←</button>
+        <button id="botonright">→</button>
+    </div>
+
+
+
+
+
+    <div id="controls">
+    <div class="iconos">
+    <i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+    <i class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i> 
+    <i class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+    </div>
+    <br>
+    <span id="currentPlay"></span><br>
+    <progress id="progress" value="0" max="100" ></progress>
+    
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
