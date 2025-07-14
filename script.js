@@ -161,4 +161,10 @@ function toggleIcon() {
     sonsole.log(e);
   }
 
+   //Funcion para control del volumen
+  const volumen= document.getElementById("volumen")
+  volumen.oninput= (e) =>{
+    const vol = e.target.value
+    player.volume =vol
+  }
   loadMusic(canciones[0])
